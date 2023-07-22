@@ -4,7 +4,7 @@ function App() {
   return (
     <div className="App">
       <h1>hello world</h1>
-      <p> heloo from react </p>
+      <p> hello world </p>
 
     </div>
   );
