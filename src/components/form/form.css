@@ -1,0 +1,16 @@
+.my-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: auto;
+  width: 400px;
+}
+
+.form-item {
+  display: flex;
+  gap: 5px;
+}
+
+.error-text {
+  color: red;
+}
