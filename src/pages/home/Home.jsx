@@ -12,6 +12,10 @@ const Home = () => {
     );
   };
 
+// component lifecycle
+// lifecycle components used in class-based components
+// componentDidMount, componentDidUpdate, componentWillUnmount
+
   useEffect(() => {
     console.log("persons on every update", personsList);
   }, [personsList]);
