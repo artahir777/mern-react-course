@@ -1,15 +1,12 @@
 import "./App.css";
 import Card from "./components/card/card";
+import Home from "./pages/home/Home";
 import Form from "./components/form/form";
 
 function App() {
   return (
     <div className="App">
-      <h1>hello world</h1>
-      <p> hello world </p>
-
-      <Card/>
-
+      <Home />
     </div>
   );
 }
