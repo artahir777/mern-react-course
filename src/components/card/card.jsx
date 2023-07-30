@@ -52,7 +52,12 @@ const Card = ({ person, updatePerson, id }) => {
         editMode={isEditable}
       />
       {!isEditable ? (
-        <button onClick={toggleEdit} className="edit-btn" >Edit</button>
+        <>
+          <button onClick={toggleEdit} className="edit-btn">
+            Edit
+          </button>
+          <button onClick={() => {}} >View</button>
+        </>
       ) : (
         <div className="form-buttons">
           <button type="submit">Save</button>
