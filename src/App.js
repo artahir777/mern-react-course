@@ -8,6 +8,7 @@ import Navbar from "./components/navigation/Navbar";
 import Error from "./pages/error/Error";
 import Persons from "./pages/persons/Persons";
 import Person from "./pages/persons/Person";
+import ContextComp from "./pages/contextForm/ContextComp";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route index element={<Persons />} />
           <Route path=":id" element={<Person />} />
         </Route>
+        <Route path="/context" element={<ContextComp/>} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>
