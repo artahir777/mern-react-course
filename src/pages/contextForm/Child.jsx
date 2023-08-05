@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
-import { MyContext } from "../../context/MyContext";
+import React from "react";
+import GrandChild from "./GrandChild";
 
 const Child = () => {
-  const value = useContext(MyContext);
 
   return (
     <div>
       <h4>Child</h4>
-      <p>{value}</p>
+      <GrandChild/>
     </div>
   );
 };
