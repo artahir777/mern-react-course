@@ -9,6 +9,8 @@ import Error from "./pages/error/Error";
 import Persons from "./pages/persons/Persons";
 import Person from "./pages/persons/Person";
 import ContextComp from "./pages/contextForm/ContextComp";
+import Profile from "./pages/profile/Profile";
+import UpdateForm from "./pages/profile/UpdateForm";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route path=":id" element={<Person />} />
         </Route>
         <Route path="/context" element={<ContextComp/>} />
+        <Route path="/profile" element={<Profile/>} />
+        <Route path="/update-profile" element={<UpdateForm/>} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>
