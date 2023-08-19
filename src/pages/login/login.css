@@ -1,0 +1,27 @@
+/* Multiple ways to handle styling in react
+    - inline css.
+        e.g. style={{color: 'red', textDecoration: 'underline', }}
+    - css files
+*/
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    margin: auto 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.form-error {
+    color: red;
+    font-size: 12px;
+    margin: 0px;
+}
