@@ -1,9 +1,11 @@
 import React from "react";
 import ButtonStyle from "./button.styled";
 
-const Button = ({ text, onClick, size }) => {
+export const someFunc = () => console.log("hello");
+
+const Button = ({ text, onClick, size, type }) => {
   return (
-    <ButtonStyle size={size}>
+    <ButtonStyle size={size} type={type}>
       <button className="custom-button" onClick={onClick}>
         {text}
       </button>

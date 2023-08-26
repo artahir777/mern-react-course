@@ -16,13 +16,32 @@ const setSize = (size) => {
   }
 };
 
+// types -> contained, outlined, text
+const btnType = (type) => {
+  switch (type) {
+    case "contained":
+      return `background-color: #1976d2; color: white; border: none`;
+
+    case "outlined":
+      return `background-color: inherit; color: #1976d2; border: 1px solid #1976d2;`;
+
+    case "text":
+      return `background-color: inherit; color: #1976d2;`;
+
+    default:
+      return `background-color: #1976d2; color: white; border: none`;
+  }
+};
+
 const ButtonStyle = styled.div`
   .custom-button {
     border-radius: 5px;
-    border: none;
-    background-color: #12abe2;
-    color: white;
+
     padding: ${(props) => setSize(props.size)};
+    background-color:
+    color: white;
+    border: none;
+    ${(props) => btnType(props.type)}
   }
 `;
 
