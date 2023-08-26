@@ -9,6 +9,7 @@ const HomeStyle = styled.div`
     gap: 20px;
     h4 {
       color: red;
+      font-size: 32px;
     }
   }
 `;
